@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: inline-block;
+    width: 1450px;
+    margin: auto;
+}
+
+.logo ul a{
+    bottom: -65px;
+    color: #fff;
+    font-family: 'Andada Pro';
+    font-size: 36px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+header{
+    background: linear-gradient(rgba(116, 82, 82, 0.3), rgba(255, 167, 167, 0.1)), url("Background.png");
+    height: 100vh;
+    -webkit-backgrounf-size:cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.nav-area{
+
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.nav-area li{
+    display: inline-block;
+}
+
+.nav-area li a{
+    color: #fff;
+    font-family: 'Andada Pro';
+    font-size: 36px;
+    padding: 5px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+@import url('https://fonts.googleapis.com/css2?family=Wendy+One&display=swap');
+body {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  height: 50em;
+}
+.nav-area li a:after {
+  content: '';
+  position: absolute;
+  border-radius: 13px;
+  width: 80%;
+  height: 5px;
+  bottom: -1px;
+  left: 15px;
+  transform: scaleX(0);
+  background: #fff ;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+.nav-area li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.logo img{
+    width: 175px;
+    float: left;
+    height: auto;
+}
+.welcome-text{
+    left: 20%;
+    top: -1%;
+    position: absolute;
+    width: 600px;
+    height: 150px;
+    margin: 20% 30%;
+    text-align: center;
+}
+.welcome-text h1{
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 50px;
+}
+.slider{
+    margin-top: 30px;
+    margin-left: 100px;
+    position: relative;
+    width: 25%;
+    overflow: hidden;
+}
+.images{
+    display: flex;
+    width: 100%;
+}
+.images img{
+    height: 400px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+.images input{
+    display: none;
+}
+.m1{
+    border-radius: 30px;
+    background-color: #dfd0d0;
+}
+.m2{
+    border-radius: 30px;
+    background-color: #dfd0d0;
+}
+.m3{
+    border-radius: 30px;
+    background-color: #dfd0d0;
+}
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover{
+    background-color: black;
+}
+#img1:checked ~ .m1{
+    margin-left: 0;
+}
+#img2:checked ~ .m2{
+    margin-left: -100%;
+}
+#img3:checked ~ .m3{
+    margin-left: -200%;
+}
+
+@media(max-width: 1000px){
+    .wrapper{
+        width: 80%;
+    }
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: #793C3C;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 16px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: aqua;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3 ease;
+}
+
+.footer-col ul li a:hover{
+    color: #fff;
+    padding-left: 8px;
+
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #e47b7b;
+    margin-right: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.footer-col .social-links a:hover{
+    color: aqua;
+    background-color: #fff;
+}
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 50px;
+    }
+}
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
+}
+
